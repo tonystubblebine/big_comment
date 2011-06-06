@@ -1,0 +1,26 @@
+= big_
+
+<em>Pre-alpha non-functional version.</em>
+
+Rails 3 engine for comment threads. The goal is to be narrow but deep, meaning that the scope of this project could include threads, threaded discussions, file attachments, and comment management. It doesn't include profiles or voting.
+
+== Installation
+
+1. Add big_comment to your Gemfile: <code>gem "big_comment", :git => "git://github.com/tonystubblebine/big_comment.git"</code>
+
+2. Make sure the gem is installed by running: <code>bundle install</code>
+
+3. Copy over migrations and css files: <code>rails generate big_comment</code>
+
+4. Run <code>rake db:migrate</code>.
+
+5. Install/build authentication dependencies. Requires current_user and require_user. Both of these are defined by common authentication plugins like Authlogic or Omnisocial.
+
+== Features for 0.1
+
+1. Comment threads
+2. Threaded discussions
+3. File attachments
+
+== Howto
+
