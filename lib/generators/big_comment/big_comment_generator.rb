@@ -20,7 +20,7 @@ class BigCommentGenerator < Rails::Generators::Base
   end
   
   def create_migration_files
-    %w{}.each do |migration|
+    %w{create_comments}.each do |migration|
       create_migration_file(migration)
     end
   end

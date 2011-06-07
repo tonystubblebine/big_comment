@@ -16,6 +16,12 @@ Rails 3 engine for comment threads. The goal is to be narrow but deep, meaning t
 
 5. Install/build authentication dependencies. Requires current_user and require_user. Both of these are defined by common authentication plugins like Authlogic or Omnisocial.
 
+6. Add an association to the model you want to have comments: has_many :comments, :class_name => "BigComment::Comment", :as => :commentable
+
+7. Add these two lines where you want the comment threads to show up:
+%= render "big_comment/comments/list", :commentable => commentable %
+%= render "big_comment/comments/new", :commentable => commentable %
+
 == Features for 0.1
 
 1. Comment threads

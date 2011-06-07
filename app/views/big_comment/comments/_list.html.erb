@@ -1,0 +1,8 @@
+<div class="comment-list" id="<%= commentable.class.to_s %>-comment-list-<%= commentable.id.to_s %>">
+  <% commentable.comments.each do |comment| %>
+    <div class="comment">
+      <%= comment.user.name %> says:<br />
+      <%= comment.comment %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @comment.title %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @comment.comment %>
+</p>
+
+<p>
+  <b>Commentable:</b>
+  <%= @comment.commentable_id %>
+</p>
+
+<p>
+  <b>Commentable type:</b>
+  <%= @comment.commentable_type %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @comment.user_id %>
+</p>
+
+<p>
+  <b>Anonymous:</b>
+  <%= @comment.anonymous %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @comment.parent_id %>
+</p>
+
+<p>
+  <b>Depth:</b>
+  <%= @comment.depth %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @comment.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

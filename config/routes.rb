@@ -1,6 +1,6 @@
 Rails::Application.routes.draw do
-
   namespace :big_comment do
+    resources :comments
   end
 
   # The priority is based upon order of creation:

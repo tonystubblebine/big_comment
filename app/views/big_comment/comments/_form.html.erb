@@ -1,0 +1,10 @@
+<%= form_for(comment, :remote => true) do |f| %>
+  <%= f.hidden_field :commentable_id %>
+  <%= f.hidden_field :commentable_type %>
+  <div class="field">
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
