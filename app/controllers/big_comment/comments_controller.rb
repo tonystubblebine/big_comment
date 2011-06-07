@@ -48,6 +48,9 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
+        @comment.commentable.comments.map{|c| c.user}.uniq.each do |user|
+          CommentNotifier.deliver_new_comment(@comment, user)
+        end
         format.html { redirect_to(@comment, :notice => 'Comment was successfully created.') }
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
         format.js

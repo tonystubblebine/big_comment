@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{big_comment}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tony Stubblebine"]
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
     "app/controllers/big_comment/comments_controller.rb",
     "app/controllers/big_comment_controller.rb",
     "app/helpers/comments_helper.rb",
+    "app/mailers/comment_notifier.rb",
     "app/models/big_comment/comment.rb",
     "app/views/big_comment/comments/_form.html.erb",
     "app/views/big_comment/comments/_list.html.erb",
@@ -29,6 +30,7 @@ Gem::Specification.new do |s|
     "app/views/big_comment/comments/index.html.erb",
     "app/views/big_comment/comments/new.html.erb",
     "app/views/big_comment/comments/show.html.erb",
+    "app/views/comment_notifier/new_comment.text.erb",
     "config/application.rb",
     "config/boot.rb",
     "config/database.yml",
