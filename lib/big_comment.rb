@@ -4,7 +4,10 @@ module BigComment
   # Twitter & Facebook app configs
   mattr_accessor :service_configs
   @@service_configs = {}
-  
+
+  mattr_accessor :from_email_address
+  @@from_email_address = nil  
+
   def self.setup
     yield self
   end

@@ -32,6 +32,6 @@ class BigCommentGenerator < Rails::Generators::Base
 
   def copy_config_files
     copy_file 'big_comment_initializer.rb',  'config/initializers/big_comment.rb'
-    copy_file 's3.yml',  'config/s3.yml'
+    #copy_file 's3.yml',  'config/s3.yml'
   end
 end
