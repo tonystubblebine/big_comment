@@ -22,6 +22,8 @@ Rails 3 engine for comment threads. The goal is to be narrow but deep, meaning t
 %= render "big_comment/comments/list", :commentable => commentable %
 %= render "big_comment/comments/new", :commentable => commentable %
 
+8. Define commentable.to_summary, which is used in the subject line of notification emails.
+
 == Features for 0.1
 
 1. Comment threads
