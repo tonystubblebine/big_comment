@@ -1,1 +1,2 @@
 $("#<%= @comment.commentable.class.to_s %>-comment-list-<%= @comment.commentable.id.to_s %>").replaceWith(function() { return "<%= raw(escape_javascript(render("big_comment/comments/list", :commentable => @comment.commentable).to_str)) %>"});
+$("#<%= @comment.commentable.class.to_s %>-comment-list-<%= @comment.commentable.id.to_s %>").siblings('form').find('textarea').val('');
