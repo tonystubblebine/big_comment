@@ -9,6 +9,6 @@ class CommentNotifier < ActionMailer::Base
     @user = user
     mail :to => user.email
     mail :from => BigComment.from_email_address
-    mail :subject => comment.user.name + " commented on " + comment.commentable.to_summary
+    mail :subject => user.name + " commented on " + comment.commentable.to_summary
   end
 end
