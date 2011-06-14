@@ -1,3 +1,1 @@
-<%= @user.name %> commented on <%= @comment.commentable.to_summary %>:
-
-<%= @comment.comment %>
+<%= @comment.user.name %> said "<%= @comment.comment %>" regarding <%= @comment.commentable.to_summary %>:
